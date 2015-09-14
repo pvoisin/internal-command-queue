@@ -2,7 +2,7 @@
 
 # Command
 
-What commands will do is up to you but they first need a name and an implementation, like this:
+What commands will do is up to you! But, first, they'll need a name...
  
 ```javascript
 var command = new Command("welcome");
@@ -23,8 +23,11 @@ Command queues have not much on their shoulders so far: they just trigger the "`
 ```javascript
 var queue = new CommandQueue();
 
-queue.when("commandPushed", function() {
-	// Well... do something, please!
+queue.when("commandPushed", function(command) {
+	// Well... do something, please! For example:
+	command.execute(function(error, results) {
+		queue.remove(command);
+	});
 });
 
 queue.when("commandRemoved", function() {
