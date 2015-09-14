@@ -5,4 +5,4 @@ instrumentation:
         - .js
     excludes: ["Observable.js"]
 reporting:
-    dir: ./.coverage
+    dir: .coverage
