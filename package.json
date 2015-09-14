@@ -1,6 +1,6 @@
 {
   "name": "internal-command-queue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple command queue which doesn't require any external service.",
   "keywords": [
     "command",

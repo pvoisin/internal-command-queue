@@ -5,6 +5,8 @@
 What commands will do is up to you! But, first, they'll need a name...
  
 ```javascript
+var Command = require("internal-command-queue").Command;
+
 var command = new Command("welcome");
 command.implementation = function execute(parameters, callback) {
 	// Here, `this` is the execution context, and provides:

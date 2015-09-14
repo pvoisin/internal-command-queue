@@ -41,4 +41,6 @@ CommandQueue.prototype.remove = function remove(command) {
 };
 
 
+CommandQueue.Command = Command;
+
 module.exports = CommandQueue;
