@@ -1,7 +1,7 @@
 var spy = require("sinon").spy;
 var expect = require("expect.js");
 
-var Command = require("../../source/Command");
+var Command = require("command-pattern");
 var CommandQueue = require("../../source/CommandQueue");
 
 describe("CommandQueue", function() {

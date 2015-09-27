@@ -1,6 +1,6 @@
 var inherit = require("util").inherits;
 var Observable = require("./Observable");
-var Command = require("./Command");
+var Command = require("command-pattern");
 
 
 function CommandQueue() {
